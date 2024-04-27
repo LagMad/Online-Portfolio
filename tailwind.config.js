@@ -52,6 +52,7 @@ export default {
       },
       backgroundImage: {
         'HeroSection': "url('/src/assets/SchotivalOnStage.png')",
+        'BEM': "url('/src/assets/BEM.png')"
       }
     },
   },

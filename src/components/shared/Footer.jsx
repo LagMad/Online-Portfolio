@@ -6,7 +6,7 @@ const Footer = () => {
   const [isFacebookHovered, setFacebookHovered] = useState(false);
   const [isTwitterHovered, setTwitterHovered] = useState(false);
   const [isInstagramHovered, setInstagramHovered] = useState(false);
-  const [isTiktokHovered, setTiktokHovered] = useState(false);
+  const [isLinkedInHovered, setLinkedInHovered] = useState(false);
 
   const handleHover = (socialMedia, hoverStatus) => {
     switch (socialMedia) {
@@ -19,8 +19,8 @@ const Footer = () => {
       case "instagram":
         setInstagramHovered(hoverStatus);
         break;
-      case "tiktok":
-        setTiktokHovered(hoverStatus);
+      case "linkedin":
+        setLinkedInHovered(hoverStatus);
         break;
       default:
         break;
@@ -31,7 +31,7 @@ const Footer = () => {
   const custDarkerBlue = "#FF9900";
 
   return (
-    <div className="flex flex-col h-auto bg-cust-darker-blue font-Poppins text-white justify-center items-center px-32 pt-0 sm:pt-12 pb-5 drop-shadow-2xl z-30">
+    <div className="flex flex-col h-auto bg-cust-darker-blue font-Poppins text-white justify-center items-center py-8 drop-shadow-2xl z-30">
       <div className="flex flex-row w-full">
         <div className="flex w-full flex-col justify-center items-center gap-5">
           <div className="font-RammettoOne text-3xl">Portfolio</div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 type={"button"}
                 variation={"primary-round"}
                 onClick={() => {
-                  window.open("https://www.instagram.com"), "_blank";
+                  window.open("https://www.instagram.com/hizkiajeremmy"), "_blank";
                 }}
               >
                 <SVGs.Instagram
@@ -90,30 +90,30 @@ const Footer = () => {
             </div>
             <div
               className="group"
-              onMouseEnter={() => handleHover("tiktok", true)}
-              onMouseLeave={() => handleHover("tiktok", false)}
+              onMouseEnter={() => handleHover("linkedin", true)}
+              onMouseLeave={() => handleHover("linkedin", false)}
             >
               <Button
                 type={"button"}
                 variation={"primary-round"}
                 onClick={() => {
-                  window.open("https://www.tiktok.com"), "_blank";
+                  window.open("https://www.LinkedIn.com/in/hizkiajeremmy"), "_blank";
                 }}
               >
-                <SVGs.TikTok
-                  fillColor={isTiktokHovered ? custOrange : "white"}
+                <SVGs.LinkedIn width="20" height="20"
+                  fillColor={isLinkedInHovered ? custOrange : "white"}
                 />
               </Button>
             </div>
           </div>
         </div>
       </div>
-      <hr className="flex justify-center items-center border-black opacity-15 w-full border-2 rounded-lg my-10" />
-      <div className="flex flex-row w-full mb-10">
+      <hr className="flex justify-center items-center border-black opacity-15 w-full border-2 rounded-lg my-8" />
+      <div className="flex flex-row w-full justify-center items-center">
         <div className="relative group flex w-full justify-center items-center text-center">
           <div className="relative group flex">
             ©2024 Hizkia Jeremmy Krisna Ananta
-            <div className="absolute -right-7 opacity-10 lg:group-hover:opacity-100 transition-all duration-500 ml-2">
+            <div className="absolute -right-7 opacity-0 group-hover:opacity-100 transition-all duration-500 ml-2">
               ❤️️
             </div>
           </div>
@@ -122,5 +122,5 @@ const Footer = () => {
     </div>
   );
 };
-
+``
 export default Footer;

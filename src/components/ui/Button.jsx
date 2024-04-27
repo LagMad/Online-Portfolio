@@ -42,7 +42,7 @@ const Button = ({
   const getButtonVariation = (variation, path) => {
     switch (variation) {
       case "primary-rectangle":
-        return "py-2 md:py-2.5 px-3 md:px-8 bg-cust-orange hover:bg-white rounded-xl text-white hover:text-cust-orange border-transparent border-2 hover:border-2 hover:border-cust-orange font-semibold";
+        return "py-2 md:py-2.5 px-3 md:px-8 bg-cust-darker-blue hover:bg-cust-orange rounded-xl text-white border-transparent border-2 hover:border-cust-darker-blue font-semibold";
       case "secondary-rectangle":
         return "py-2 md:py-2.5 px-3 md:px-8 bg-white hover:bg-cust-orange text-cust-orange hover:text-white rounded-xl font-semibold border-2 border-cust-orange hover:border-2 hover:border-white";
       case "primary-round":
