@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        Montserrat: ["Montserrat"],
         RammettoOne: ['RammettoOne'],
         Poppins: ['Poppins'],
         PlusJakartaSans: ['PlusJakartaSans'],
+        Playfair: ["Playfair"],
       },
       colors: {
         'cust-orange-light': '#FFF0E8',
@@ -38,19 +40,18 @@ export default {
         'cust-black-light-hover': '#D9D9D9',
         'cust-black-light-active': '#B0B0B0',
         'cust-black-normal': '#000000',
+
+        
+        "cust-darkest-blue": "#000C39",
+        "cust-darker-blue": "#001767",
+        "cust-lighter-blue": "#3876BF",
+        "cust-lightest-blue": "#C3DFFF",
+        "cust-green": "#23B000",
+        "cust-red": "#BA0000",
+        "cust-orange": "#FF9900"
       },
       backgroundImage: {
-        'HeroSection': "url('/src/assets/HeroSection.png')",
-        'FruitCard': "url('/src/assets/FruitCard.png')",
-        'MeatCard': "url('/src/assets/MeatCard.png')",
-        'SeafoodCard': "url('/src/assets/SeafoodCard.png')",
-        'VegetablesCard': "url('/src/assets/VegetablesCard.png')",
-        'Partnership1': "url('/src/assets/Partnership1.png')",
-        'Partnership2': "url('/src/assets/Partnership2.png')",
-        'Partnership3': "url('/src/assets/Partnership3.png')",
-        'PromoBG': "url('/src/assets/PromoBG.png')",
-        'PeoplePict': "url('/src/assets/PeoplePict.png')",
-        'ProfileHeader': "url('/src/assets/ProfileHeader.png')",
+        'HeroSection': "url('/src/assets/SchotivalOnStage.png')",
       }
     },
   },
