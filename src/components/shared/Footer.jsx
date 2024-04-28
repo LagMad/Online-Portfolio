@@ -80,7 +80,8 @@ const Footer = () => {
                 type={"button"}
                 variation={"primary-round"}
                 onClick={() => {
-                  window.open("https://www.instagram.com/hizkiajeremmy"), "_blank";
+                  window.open("https://www.instagram.com/hizkiajeremmy"),
+                    "_blank";
                 }}
               >
                 <SVGs.Instagram
@@ -97,10 +98,13 @@ const Footer = () => {
                 type={"button"}
                 variation={"primary-round"}
                 onClick={() => {
-                  window.open("https://www.LinkedIn.com/in/hizkiajeremmy"), "_blank";
+                  window.open("https://www.LinkedIn.com/in/hizkiajeremmy"),
+                    "_blank";
                 }}
               >
-                <SVGs.LinkedIn width="20" height="20"
+                <SVGs.LinkedIn
+                  width="20"
+                  height="20"
                   fillColor={isLinkedInHovered ? custOrange : "white"}
                 />
               </Button>
@@ -108,7 +112,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="flex justify-center items-center border-black opacity-15 w-full border-2 rounded-lg my-8" />
+      <div className="w-full px-36">
+        <hr className="flex justify-center items-center border-black opacity-15 w-full border-2 rounded-lg my-8 px-36" />
+      </div>
       <div className="flex flex-row w-full justify-center items-center">
         <div className="relative group flex w-full justify-center items-center text-center">
           <div className="relative group flex">
@@ -122,5 +128,5 @@ const Footer = () => {
     </div>
   );
 };
-``
+``;
 export default Footer;

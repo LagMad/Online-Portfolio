@@ -95,7 +95,7 @@ const Home = () => {
               <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out">
                 informatics engineering
               </span>{" "}
-              student of Brawijaya University, Indonesia, and also of one
+              student of Brawijaya University, Indonesia, and also one of
               TELADAN Leadership Program & Scholarship 2023's{" "}
               <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out">
                 awardee.
