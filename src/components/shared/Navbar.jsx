@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(location.pathname !== "/");
 
   useEffect(() => {
-    if (location.pathname === "/") {
+    // if (location.pathname === "/") {
       const handleScroll = () => {
         const scrollTop = window.scrollY;
         const scrollThreshold = 150;
@@ -24,7 +24,7 @@ const Navbar = () => {
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
-    }
+    // }
   }, [location]);
 
   return (

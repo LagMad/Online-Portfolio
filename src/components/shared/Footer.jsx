@@ -66,6 +66,8 @@ const Footer = () => {
                 }}
               >
                 <SVGs.Instagram
+                  width="20"
+                  height="20"
                   fillColor={isInstagramHovered ? custOrange : "white"}
                 />
               </Button>
