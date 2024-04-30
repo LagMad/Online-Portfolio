@@ -3,18 +3,14 @@ import SVGs from "./SVGs.jsx";
 import Button from "../ui/Button";
 
 const Footer = () => {
-  const [isFacebookHovered, setFacebookHovered] = useState(false);
-  const [isTwitterHovered, setTwitterHovered] = useState(false);
+  const [isGitHubHovered, setGitHubHovered] = useState(false);
   const [isInstagramHovered, setInstagramHovered] = useState(false);
   const [isLinkedInHovered, setLinkedInHovered] = useState(false);
 
   const handleHover = (socialMedia, hoverStatus) => {
     switch (socialMedia) {
-      case "facebook":
-        setFacebookHovered(hoverStatus);
-        break;
-      case "twitter":
-        setTwitterHovered(hoverStatus);
+      case "GitHub":
+        setGitHubHovered(hoverStatus);
         break;
       case "instagram":
         setInstagramHovered(hoverStatus);
@@ -39,35 +35,20 @@ const Footer = () => {
           <div className="flex flex-row gap-4">
             <div
               className="group"
-              onMouseEnter={() => handleHover("facebook", true)}
-              onMouseLeave={() => handleHover("facebook", false)}
+              onMouseEnter={() => handleHover("GitHub", true)}
+              onMouseLeave={() => handleHover("GitHub", false)}
             >
               <Button
                 type={"button"}
                 variation={"primary-round"}
                 onClick={() => {
-                  window.open("https://www.facebook.com"), "_blank";
+                  window.open("https://github.com/LagMad"), "_blank";
                 }}
               >
-                <SVGs.Facebook
-                  fillColor={isFacebookHovered ? custOrange : "white"}
-                />
-              </Button>
-            </div>
-            <div
-              className="group"
-              onMouseEnter={() => handleHover("twitter", true)}
-              onMouseLeave={() => handleHover("twitter", false)}
-            >
-              <Button
-                type={"button"}
-                variation={"primary-round"}
-                onClick={() => {
-                  window.open("https://www.twitter.com"), "_blank";
-                }}
-              >
-                <SVGs.Twitter
-                  fillColor={isTwitterHovered ? custOrange : "white"}
+                <SVGs.GitHub
+                  width="20"
+                  height="20"
+                  fillColor={isGitHubHovered ? custOrange : "white"}
                 />
               </Button>
             </div>

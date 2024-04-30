@@ -52,7 +52,10 @@ export default {
       },
       backgroundImage: {
         'HeroSection': "url('/src/assets/SchotivalOnStage.png')",
-        'BEM': "url('/src/assets/BEM.png')"
+        'BEM': "url('/src/assets/BEM.png')",
+        'TSA-UB': "url('/src/assets/TSABrawijaya.png')",
+        'WebAgroIndo': "url('/src/assets/AgroIndo.png')",
+        'WebBEM': "url('/src/assets/SSWebBEMDarkened.png')",
       }
     },
   },
