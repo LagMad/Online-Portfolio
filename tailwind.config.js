@@ -45,6 +45,7 @@ export default {
         'WebAgroIndo': "url('/src/assets/AgroIndo.png')",
         'WebBEM': "url('/src/assets/SSWebBEMDarkened.png')",
         'WithCat': "url('/src/assets/WithCatDarkened.png')",
+        'AtTheBeach': "url('/src/assets/AtTheBeach.png')",
       }
     },
   },
