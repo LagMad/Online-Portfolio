@@ -47,6 +47,10 @@ export default {
         'WithCat': "url('/src/assets/WithCatDarkened.png')",
         'AtTheBeach': "url('/src/assets/AtTheBeach.png')",
         'SchotivalTogether': "url('/src/assets/SchotivalTogether.png')",
+        'ProjectsHero': "url('/src/assets/ProjectsHero.png')",
+        'SIMABA_SS': "url('/src/assets/SIMABA_SS.png')",
+        'DesaPunten_SS': "url('/src/assets/DesaPunten_SS.png')",
+        'FITMEAL_SS': "url('/src/assets/FITMEAL_SS.png')",
       }
     },
   },

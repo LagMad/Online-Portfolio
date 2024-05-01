@@ -4,27 +4,25 @@ import Button from "../ui/Button";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [isScrolled, setIsScrolled] = useState(location.pathname !== "/");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // if (location.pathname === "/") {
-      const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        const scrollThreshold = 150;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const scrollThreshold = 150;
 
-        if (scrollTop > scrollThreshold) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
+      if (scrollTop > scrollThreshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    // }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [location]);
 
   return (

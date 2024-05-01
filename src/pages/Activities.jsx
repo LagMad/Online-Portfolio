@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import MainLayout from "../components/layout/MainLayout";
+import Button from "../components/ui/Button";
+import SSWebBEM from "../assets/SSWebBEM.png";
 
 const Activities = () => {
   const containerRef = useRef(null);
@@ -32,9 +34,9 @@ const Activities = () => {
           <div
             className="text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
             style={{
-              WebkitTextStrokeWidth: "5px", // Outline width
-              WebkitTextStrokeColor: "white", // Outline color
-              color: isHovered ? "white" : "transparent", // Text color
+              WebkitTextStrokeWidth: "5px",
+              WebkitTextStrokeColor: "white",
+              color: isHovered ? "white" : "transparent",
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -42,6 +44,7 @@ const Activities = () => {
             ACTIVITIES
           </div>
         </div>
+        
       </div>
     </MainLayout>
   );
