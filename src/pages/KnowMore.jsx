@@ -29,7 +29,7 @@ const KnowMore = () => {
     <MainLayout>
       <div className="flex flex-col w-full">
         <div
-          className="flex flex-row w-full min-h-screen bg-AtTheBeach bg-fixed bg-cover bg-no-repeat bg-center justify-center items-center"
+          className="flex flex-row w-full min-h-screen bg-AtTheBeach bg-fixed bg-cover bg-no-repeat justify-center items-center"
           ref={containerRef}
         >
           <div
