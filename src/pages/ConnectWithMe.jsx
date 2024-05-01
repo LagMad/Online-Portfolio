@@ -14,7 +14,7 @@ const ConnectWithMe = () => {
             Sharing Paths.
           </div>
           <hr className="border-2 border-cust-orange bg-cust-orange rounded-full h-1 w-full " />
-          <div className="flex flex-col text-semibold text-lg gap-6">
+          <div className="flex flex-col text-semibold text-lg gap-6 text-justify">
             <div>
               In our journey of growth and success, connecting hearts and
               sharing paths fosters understanding and unity, propelling us

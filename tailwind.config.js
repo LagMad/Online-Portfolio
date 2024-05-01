@@ -46,6 +46,7 @@ export default {
         'WebBEM': "url('/src/assets/SSWebBEMDarkened.png')",
         'WithCat': "url('/src/assets/WithCatDarkened.png')",
         'AtTheBeach': "url('/src/assets/AtTheBeach.png')",
+        'SchotivalTogether': "url('/src/assets/SchotivalTogether.png')",
       }
     },
   },
