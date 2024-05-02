@@ -293,7 +293,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col w-full justify-center items-center gap-10">
-                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-center gap-5">
+                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-bottom gap-5">
                   <div className="text-8xl font-black">TSA BRAWIJAYA</div>
                   <div className="text-xl font-semibold">
                     Head of Creative Design Department
