@@ -306,7 +306,28 @@ const Email = ({ fillColor = "white", width = "1em", height = "1em" }) => {
   );
 };
 
+const BurgerMenu = ({ fillColor="white", width = "1em", height = "1em"}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="none"
+        stroke={fillColor}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        d="M3 6h18M3 12h18M3 18h18"
+      />
+    </svg>
+  );
+};
+
 export default {
+  BurgerMenu,
   Email,
   FitMeal,
   LinkedIn,
