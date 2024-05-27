@@ -1,14 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
+
 import MainLayout from "../components/layout/MainLayout";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import HeroBG from "../assets/SchotivalOnStage.png";
 import SVGs from "../components/shared/SVGs";
 import Portrait from "../assets/WhoAmI.jpeg";
 import Button from "../components/ui/Button";
-import WhoAmICard from "../components/shared/WhoAmICard";
 import PITBEM from "../assets/PITBEM.jpeg";
-import SSWebBEM from "../assets/SSWebBEM.png";
 import SideView from "../assets/SideView.jpeg";
 import CreativeDesign from "../assets/CreativeDesign.jpeg";
 import FinalPitching from "../assets/FinalPitching.jpeg";
@@ -22,6 +20,22 @@ import FitMeal from "../assets/FitMeal.png";
 const Home = () => {
   const navigate = useNavigate();
   const containerRef = useRef(null);
+  const numberRef = useRef(null);
+  const [startCounting, setStartCounting] = useState(false);
+
+  function Number({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: startCounting ? n : 0,
+      delay: 200,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+    return (
+      <animated.div className={""}>
+        {number.to((n) => n.toFixed(0))}
+      </animated.div>
+    );
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +51,30 @@ const Home = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStartCounting(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (numberRef.current) {
+      observer.observe(numberRef.current);
+    }
+
+    return () => {
+      if (numberRef.current) {
+        observer.unobserve(numberRef.current);
+      }
     };
   }, []);
 
@@ -142,6 +180,26 @@ const Home = () => {
                   </div>
                 </button>
               </div>
+            </div>
+          </div>
+          <hr className="border-white border-2 rounded-full w-[800px] opacity-30"/>
+          <div
+            className="flex flex-row w-3/4 justify-center items-center"
+            ref={numberRef}
+          >
+            <div className="flex flex-col w-full justify-center items-center">
+              <div className="text-7xl font-black">
+                <Number n={11} />
+              </div>
+              <div className="text-4xl font-normal">Organizational Experiences</div>
+              <div>and the journey continues...</div>
+            </div>
+            <div className="flex flex-col w-full justify-center items-center">
+              <div className="text-7xl font-black">
+                <Number n={5} />
+              </div>
+              <div className="text-4xl font-normal">Projects Handled</div>
+              <div>and the story unfolds...</div>
             </div>
           </div>
         </div>
@@ -509,12 +567,10 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                   <img className="w-72" src={PKKMB} alt="Missing Image" />
-                  <div className="text-center text-xl">
-                    SIMABA FILKOM
-                  </div>
+                  <div className="text-center text-xl">SIMABA FILKOM</div>
                 </div>
                 <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
-                <img className="w-72" src={FitMeal} alt="Missing Image" />
+                  <img className="w-72" src={FitMeal} alt="Missing Image" />
                   <div className="text-center text-xl">FITMEAL</div>
                 </div>
               </div>
