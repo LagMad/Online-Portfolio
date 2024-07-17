@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import { motion } from "framer-motion";
 
 import MainLayout from "../components/layout/MainLayout";
 import SVGs from "../components/shared/SVGs";
@@ -86,15 +87,41 @@ const Home = () => {
           className="flex flex-row w-full min-h-screen bg-HeroSection bg-fixed bg-cover bg-no-repeat justify-between items-center px-36 font-Poppins text-white"
           ref={containerRef}
         >
-          <div className="flex flex-col w-2/5 gap-10">
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-col w-2/5 gap-10"
+          >
             <div className="text-5xl font-black tracking-[0.2em] leading-snug">
               Hizkia <span className="text-cust-orange">Jeremmy</span>
               <br />
               Krisna Ananta
             </div>
-          </div>
+          </motion.div>
           <div className="w-1/5" />
-          <div className="flex flex-col w-2/5 justify-center items-end gap-8">
+          <motion.div
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-col w-2/5 justify-center items-end gap-8"
+          >
             <div className="text-2xl font-bold tracking-widest text-right">
               Front-End Web Developer
               <br />
@@ -102,7 +129,7 @@ const Home = () => {
               <br />
               of Brawijaya University
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* WHO AM I? */}
@@ -182,37 +209,91 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <hr className="border-white border-2 rounded-full w-[800px] opacity-30"/>
+          <hr className="border-white border-2 rounded-full w-[800px] opacity-30" />
           <div
             className="flex flex-row w-3/4 justify-center items-center"
             ref={numberRef}
           >
-            <div className="flex flex-col w-full justify-center items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  type: "spring",
+                  duration: 2.0,
+                  damping: 10,
+                  stiffness: 100,
+                },
+              }}
+              className="flex flex-col w-full justify-center items-center"
+            >
               <div className="text-7xl font-black">
                 <Number n={11} />
               </div>
-              <div className="text-4xl font-normal">Organizational Experiences</div>
+              <div className="text-4xl font-normal">
+                Organizational Experiences
+              </div>
               <div>and the journey continues...</div>
-            </div>
-            <div className="flex flex-col w-full justify-center items-center">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 150 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  type: "spring",
+                  duration: 2.0,
+                  damping: 10,
+                  stiffness: 100,
+                },
+              }}
+              className="flex flex-col w-full justify-center items-center"
+            >
               <div className="text-7xl font-black">
                 <Number n={5} />
               </div>
               <div className="text-4xl font-normal">Projects Handled</div>
               <div>and the story unfolds...</div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex flex-col w-full h-auto justify-center items-center px-36 gap-10">
-          <div className="flex flex-col font-black text-5xl px-7 py-3 bg-cust-darker-blue text-white text-center gap-3">
+          <motion.div
+            initial={{ opacity: 0, y: -150 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-col font-black text-5xl px-7 py-3 bg-cust-darker-blue text-white text-center gap-3 shadow-table"
+          >
             <div>
               Did <span className="bg-cust-orange py-[2.25px]">You</span> Know?
             </div>
             <div className="text-3xl">
               I can't stop seeking a way to learn more things.
             </div>
-          </div>
-          <div className="flex flex-row gap-20 justify-center items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-row gap-20 justify-center items-center"
+          >
             <div className="text-lg w-2/3 font-medium text-justify">
               Discovering new thing and realizing I love said thing have always
               been a big part of my life. The first time I jumped into Front-End
@@ -234,8 +315,21 @@ const Home = () => {
               src={SideView}
               alt="missing img"
             />
-          </div>
-          <div className="flex flex-row gap-20 justify-center items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-row gap-20 justify-center items-center"
+          >
             <img
               className="w-1/3 h-[400px] object-cover object-bottom rounded-lg"
               src={FinalPitching}
@@ -262,8 +356,21 @@ const Home = () => {
               isn't the end of the world when you didn't get accepted into
               something, right? Of course, it is NOT.
             </div>
-          </div>
-          <div className="flex flex-row gap-20 justify-center items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="flex flex-row gap-20 justify-center items-center"
+          >
             <div className="text-lg w-2/3 font-medium text-justify">
               Just after the final pitching finished, one of my friend contacted
               me for a new project. At the time, I was still tired from one
@@ -281,13 +388,26 @@ const Home = () => {
               src={BusinessMeet}
               alt="missing img"
             />
-          </div>
-          <div className="w-10/12 text-2xl text-center font-semibold py-5 px-10 rounded-2xl bg-cust-darker-blue text-white">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                duration: 2.0,
+                damping: 10,
+                stiffness: 100,
+              },
+            }}
+            className="w-10/12 text-2xl text-center font-semibold py-5 px-10 rounded-2xl bg-cust-darker-blue text-white"
+          >
             I just can't stop and I will never stop learning. Just like a
             mythical bird, Garuda. In some interpretations, Garuda is said to
             possess immense power and is capable of flying continuously without
             ever needing to land, except when it dies.
-          </div>
+          </motion.div>
         </div>
 
         {/* ACTIVITIES */}

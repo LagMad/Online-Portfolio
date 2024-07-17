@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import SVGs from "./SVGs.jsx";
 import Button from "../ui/Button";
 
@@ -27,7 +28,20 @@ const Footer = () => {
   const custDarkerBlue = "#FF9900";
 
   return (
-    <div className="flex flex-col h-auto bg-cust-darker-blue font-Poppins text-white justify-center items-center py-8 drop-shadow-2xl z-30">
+    <motion.footer
+      initial={{ opacity: 0, y: 150 }}
+      buhileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          duration: 2.0,
+          damping: 10,
+          stiffness: 100,
+        },
+      }}
+      className="flex flex-col h-auto bg-cust-darker-blue font-Poppins text-white justify-center items-center py-8 drop-shadow-2xl z-30"
+    >
       <div className="flex flex-row w-full">
         <div className="flex w-full flex-col justify-center items-center gap-5">
           <div className="font-RammettoOne text-3xl">Portfolio</div>
@@ -108,7 +122,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.footer>
   );
 };
 ``;
