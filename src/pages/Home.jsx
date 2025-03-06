@@ -81,10 +81,10 @@ const Home = () => {
 
   return (
     <MainLayout>
-      <div className="flex flex-col min-h-screen gap-28">
+      <div className="flex flex-col min-h-screen gap-10 md:gap-28">
         {/* HERO SECTION */}
         <div
-          className="flex flex-row w-full min-h-screen bg-HeroSection bg-fixed bg-cover bg-no-repeat justify-between items-center px-36 font-Poppins text-white"
+          className="flex flex-col md:flex-row w-full min-h-screen bg-HeroSection bg-fixed bg-cover bg-center bg-no-repeat justify-center md:justify-between items-center px-10 md:px-36 font-Poppins text-white gap-20 md:gap-0"
           ref={containerRef}
         >
           <motion.div
@@ -99,15 +99,15 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-col w-2/5 gap-10"
+            className="flex flex-col w-full md:w-1/2 gap-10"
           >
-            <div className="text-5xl font-black tracking-[0.2em] leading-snug">
-              Hizkia <span className="text-cust-orange">Jeremmy</span>
-              <br />
-              Krisna Ananta
+            <div className="text-2xl md:text-5xl font-black tracking-[0.2em] leading-loose flex flex-col gap-0 md:gap-5 text-center md:text-left">
+              <span>
+                Hizkia <span className="text-cust-orange">Jeremmy</span>
+              </span>
+              <span>Krisna Ananta</span>
             </div>
           </motion.div>
-          <div className="w-1/5" />
           <motion.div
             initial={{ opacity: 0, x: 150 }}
             whileInView={{
@@ -120,9 +120,9 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-col w-2/5 justify-center items-end gap-8"
+            className="flex flex-col w-full md:w-1/2 justify-center items-end gap-8"
           >
-            <div className="text-2xl font-bold tracking-widest text-right">
+            <div className="text-base md:text-2xl font-bold tracking-widest text-center md:text-right">
               Front-End Web Developer
               <br />
               Informatics Engineering Student
@@ -133,20 +133,20 @@ const Home = () => {
         </div>
 
         {/* WHO AM I? */}
-        <div className="flex flex-col w-full h-auto justify-center items-center gap-10 px-36 py-10 -mt-[112px] text-white bg-cust-darker-blue">
-          <div className="flex flex-row w-full justify-center items-center gap-28">
-            <div className="flex flex-col w-1/3 overflow-hidden items-end">
+        <div className="flex flex-col w-full h-auto justify-center items-center gap-10 px-10 md:px-36 py-10 -mt-[112px] text-white bg-cust-darker-blue">
+          <div className="flex flex-col md:flex-row w-full justify-center items-center gap-10 md:gap-28">
+            <div className="flex flex-col w-full md:w-1/3 overflow-hidden items-end">
               <img
-                className="w-[400px] h-[500px] object-cover object-center rounded-lg"
+                className="w-full h-96 md:h-[500px] object-cover object-center rounded-lg"
                 src={Portrait}
                 alt="missing img"
               />
             </div>
-            <div className="flex flex-col w-2/3 justify-center items-start text-justify gap-7">
-              <div className="text-2xl w-full font-black">
+            <div className="flex flex-col w-full md:w-2/3 justify-center items-start text-justify gap-7">
+              <div className="text-lg md:text-2xl w-full font-black text-center md:text-left">
                 Greetings and Welcome to my portfolio!
               </div>
-              <div className="text-lg w-full font-medium">
+              <div className="text-base md:text-lg w-full font-medium">
                 The name is{" "}
                 <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out">
                   Hizkia Jeremmy Krisna Ananta
@@ -187,8 +187,8 @@ const Home = () => {
                 will be parts where you will know my journey, activites,
                 projects, more skills, and how to connect with me.
               </div>
-              <div className="flex flex-col w-full justify-center items-start gap-3">
-                <div className="text-lg font-medium w-full">
+              <div className="flex flex-col w-full justify-center items-center md:items-start gap-3">
+                <div className="text-lg font-medium w-full text-center md:text-left">
                   See my other online portfolio
                 </div>
                 <button
@@ -211,7 +211,7 @@ const Home = () => {
           </div>
           <hr className="border-white border-2 rounded-full w-[800px] opacity-30" />
           <div
-            className="flex flex-row w-3/4 justify-center items-center"
+            className="flex flex-col md:flex-row w-full md:w-3/4 justify-center items-center gap-10"
             ref={numberRef}
           >
             <motion.div
@@ -231,7 +231,7 @@ const Home = () => {
               <div className="text-7xl font-black">
                 <Number n={11} />
               </div>
-              <div className="text-4xl font-normal">
+              <div className="text-2xl md:text-4xl font-normal text-center">
                 Organizational Experiences
               </div>
               <div>and the journey continues...</div>
@@ -253,12 +253,16 @@ const Home = () => {
               <div className="text-7xl font-black">
                 <Number n={5} />
               </div>
-              <div className="text-4xl font-normal">Projects Handled</div>
+              <div className="text-2xl md:text-4xl font-normal text-center">
+                Projects Handled
+              </div>
               <div>and the story unfolds...</div>
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col w-full h-auto justify-center items-center px-36 gap-10">
+
+        {/* DID YOU KNOW? */}
+        <div className="flex flex-col w-full h-auto justify-center items-center px-10 md:px-36 gap-10">
           <motion.div
             initial={{ opacity: 0, y: -150 }}
             whileInView={{
@@ -271,12 +275,12 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-col font-black text-5xl px-7 py-3 bg-cust-darker-blue text-white text-center gap-3 shadow-table"
+            className="flex flex-col font-black text-3xl md:text-5xl px-7 py-3 bg-cust-darker-blue text-white text-center gap-3 shadow-table"
           >
             <div>
               Did <span className="bg-cust-orange py-[2.25px]">You</span> Know?
             </div>
-            <div className="text-3xl">
+            <div className="text-lg md:text-3xl">
               I can't stop seeking a way to learn more things.
             </div>
           </motion.div>
@@ -292,9 +296,9 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-row gap-20 justify-center items-center"
+            className="flex flex-col-reverse md:flex-row gap-5 md:gap-20 justify-center items-center"
           >
-            <div className="text-lg w-2/3 font-medium text-justify">
+            <div className="text-base md:text-lg w-full md:w-2/3 font-medium text-justify">
               Discovering new thing and realizing I love said thing have always
               been a big part of my life. The first time I jumped into Front-End
               web development was when I joined BEM FILKOM UB 2023. I joined
@@ -311,7 +315,7 @@ const Home = () => {
               until my work is done.
             </div>
             <img
-              className="w-1/3 object-cover object-center rounded-lg"
+              className="w-full md:w-1/3 h-[400px] object-cover object-center rounded-lg"
               src={SideView}
               alt="missing img"
             />
@@ -328,14 +332,14 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-row gap-20 justify-center items-center"
+            className="flex flex-col md:flex-row gap-5 md:gap-20 justify-center items-center"
           >
             <img
-              className="w-1/3 h-[400px] object-cover object-bottom rounded-lg"
+              className="w-full md:w-1/3 h-[400px] object-cover object-bottom rounded-lg"
               src={FinalPitching}
               alt="missing img"
             />
-            <div className="text-lg w-2/3 font-medium text-justify">
+            <div className="text-base md:text-lg w-full md:w-2/3 font-medium text-justify">
               Although my skill in Front-End web development has grown
               significantly ever since that day, my full of curious and hard
               working traits never vanished. I always try to find myself a place
@@ -369,9 +373,9 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="flex flex-row gap-20 justify-center items-center"
+            className="flex flex-col-reverse md:flex-row gap-5 md:gap-20 justify-center items-center"
           >
-            <div className="text-lg w-2/3 font-medium text-justify">
+            <div className="text-base md:text-lg w-full md:w-2/3 font-medium text-justify">
               Just after the final pitching finished, one of my friend contacted
               me for a new project. At the time, I was still tired from one
               month of working on that internship selection series, but I see a
@@ -384,7 +388,7 @@ const Home = () => {
               will be presented to other companies in a conference in Vietnam.
             </div>
             <img
-              className="w-1/3 h-[400px] object-cover object-center rounded-lg"
+              className="w-full md:w-1/3 h-[400px] object-cover object-center rounded-lg"
               src={BusinessMeet}
               alt="missing img"
             />
@@ -401,7 +405,7 @@ const Home = () => {
                 stiffness: 100,
               },
             }}
-            className="w-10/12 text-2xl text-center font-semibold py-5 px-10 rounded-2xl bg-cust-darker-blue text-white"
+            className="w-full md:w-10/12 text-lg md:text-2xl text-center font-semibold py-3 md:py-5 px-5 md:px-10 rounded-2xl bg-cust-darker-blue text-white"
           >
             I just can't stop and I will never stop learning. Just like a
             mythical bird, Garuda. In some interpretations, Garuda is said to
@@ -412,13 +416,13 @@ const Home = () => {
 
         {/* ACTIVITIES */}
         <div className="flex flex-col w-full min-h-screen justify-start items-center">
-          <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden">
-            <div className="text-left bg-cust-darker-blue px-36 py-10">
+          <div className="flex w-full flex-col text-4xl md:text-9xl font-black group text-white overflow-hidden">
+            <div className="text-left bg-cust-darker-blue px-10 md:px-36 py-10">
               <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                 HIGHLIGHTED
               </div>
             </div>
-            <div className="text-right bg-cust-orange px-36 py-10">
+            <div className="text-right bg-cust-orange px-10 md:px-36 py-10">
               <div className="transform transition-all duration-500 ease-in-ou group-hover:-translate-x-[100px]">
                 ACTIVITIES
               </div>
@@ -427,29 +431,27 @@ const Home = () => {
           <div className="w-full gap-10">
             <div className="flex flex-col w-full justify-center items-center gap-16">
               <div className="flex flex-col w-full justify-center items-center gap-10">
-                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-BEM bg-cover bg-no-repeat bg-center gap-5">
-                  <div className="text-8xl font-black">BEM FILKOM UB 2023</div>
-                  <div className="text-xl font-semibold">
+                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-BEM bg-cover bg-no-repeat bg-center gap-5 px-10">
+                  <div className="text-5xl md:text-8xl font-black text-center">
+                    BEM FILKOM UB 2023
+                  </div>
+                  <div className="text-base md:text-xl font-semibold text-center">
                     Staff of Information and Technology Bureau
                   </div>
                 </div>
-                <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-                  <div className="flex flex-col w-1/2 justify-center items-start gap-5">
-                    <div className="text-5xl font-bold text-left leading-snug">
+                <div className="flex flex-col md:flex-row w-full justify-center items-start gap-10 md:gap-24 px-10 md:px-36">
+                  <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start gap-5">
+                    <div className="text-2xl md:text-5xl font-bold text-center md:text-left leading-snug">
                       Providing website needed
                       <br />
                       for BEM FILKOM 2023.
                     </div>
-                    <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
-                    <div className="text-lg font-medium text-left">
+                    <hr className="bg-black opacity-50 w-full md:w-1/2 h-1 rounded-full" />
+                    <div className="text-base md:text-lg font-medium text-justify md:text-left">
                       As a member of Information and Technology Bureau (PIT), it
                       is our job to provide the technology needed, like website,
                       for any BEM FILKOM's needs, from open recruitment,
                       announcement, to introducing the new cabinet management.
-                      {/* A
-                    one period use web and keep updated throughout the period,
-                    BEM FILKOM 2023's website is the pride and joy of
-                    Information and Technology Bureau.*/}
                     </div>
                     <Button
                       variation={"primary-rectangle"}
@@ -461,9 +463,9 @@ const Home = () => {
                       Go To BEM FILKOM 2023's Website
                     </Button>
                   </div>
-                  <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+                  <div className="flex flex-col w-full md:w-1/2 justify-center items-center gap-10">
                     <img
-                      className="w-full h-[400px] object-cover object-center"
+                      className="w-full h-72 md:h-[400px] object-cover object-center rounded-2xl"
                       src={PITBEM}
                       alt="missing img"
                     />
@@ -471,40 +473,25 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col w-full justify-center items-center gap-10">
-                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-bottom gap-5">
-                  <div className="text-8xl font-black">TSA BRAWIJAYA</div>
-                  <div className="text-xl font-semibold">
+                <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-bottom gap-5 px-10">
+                  <div className="text-5xl md:text-8xl font-black text-center">
+                    TSA BRAWIJAYA
+                  </div>
+                  <div className="text-base md:text-xl font-semibold text-center">
                     Head of Creative Design Department
                   </div>
                 </div>
-                <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-                  <div className="flex flex-col w-1/2 justify-center items-start gap-5">
-                    <div className="text-5xl font-bold text-left leading-snug">
+                <div className="flex flex-col md:flex-row w-full justify-center items-start gap-10 md:gap-24 px-10 md:px-36">
+                  <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start gap-5">
+                    <div className="text-2xl md:text-5xl font-bold text-center md:text-left leading-snug">
                       Got any digital design or editing needs? You got us!
                     </div>
-                    <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
-                    <div className="text-lg font-medium text-left">
+                    <hr className="bg-black opacity-50 w-full md:w-1/2 h-1 rounded-full" />
+                    <div className="text-base md:text-lg font-medium text-justify md:text-left">
                       As a member of Information and Technology Bureau (PIT), it
                       is our job to provide the technology needed, like website,
                       for any BEM FILKOM's needs, from open recruitment,
                       announcement, to introducing the new cabinet management.
-                      {/* A
-                    one period use web and keep updated throughout the period,
-                    BEM FILKOM 2023's website is the pride and joy of
-                    Information and Technology Bureau.*/}
-                    </div>
-                    <div className="flex flex-col text-lg text-left justify-start items-start">
-                      <div className="">
-                        <span className="font-bold">Role :</span> Head
-                        Department
-                      </div>
-                      <div className="">
-                        <span className="font-bold">Team Size :</span> 9
-                      </div>
-                      <div className="">
-                        <span className="font-bold">Period :</span> 2024 -
-                        Current
-                      </div>
                     </div>
                     <Button
                       variation={"primary-rectangle"}
@@ -517,31 +504,31 @@ const Home = () => {
                       Go To TSA Brawijaya's Instagram
                     </Button>
                   </div>
-                  <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+                  <div className="flex flex-col w-full md:w-1/2 justify-center items-center gap-10">
                     <img
-                      className="w-full h-[400px] object-cover object-center"
+                      className="w-full h-64 md:h-[400px] object-cover object-center rounded-2xl"
                       src={CreativeDesign}
                       alt="missing img"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col w-full justify-center items-center px-36 gap-10">
+              <div className="flex flex-col w-full justify-center items-center px-10 md:px-36 gap-10">
                 <div className="text-center text-4xl font-bold text-white bg-cust-darker-blue py-3 px-8 border-2 border-cust-orange rounded-2xl">
                   Other Activities
                 </div>
-                <div className="flex flex-row w-full justify-between items-center text-white gap-10 font-bold">
-                  <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+                <div className="flex flex-col md:flex-row w-full justify-between items-center text-white gap-10 font-bold">
+                  <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                     <img className="w-72" src={Abdimasa} alt="Missing Image" />
                     <div className="text-center text-xl">FILKOM ABDIMASA</div>
                   </div>
-                  <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+                  <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                     <img className="w-72" src={PKKMB} alt="Missing Image" />
                     <div className="text-center text-xl">
                       PKKMB & STARTUP ACADEMY
                     </div>
                   </div>
-                  <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+                  <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                     <img className="w-72" src={TSA} alt="Missing Image" />
                     <div className="text-center text-xl">TSA BRAWIJAYA</div>
                   </div>
@@ -559,13 +546,13 @@ const Home = () => {
 
         {/* PROJECTS */}
         <div className="flex flex-col w-full min-h-screen justify-start items-center pb-20">
-          <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden">
-            <div className="text-left bg-cust-darker-blue px-36 py-10">
+          <div className="flex w-full flex-col text-4xl md:text-9xl font-black group text-white overflow-hidden">
+            <div className="text-left bg-cust-darker-blue px-10 md:px-36 py-10">
               <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                 HIGHLIGHTED
               </div>
             </div>
-            <div className="text-right bg-cust-orange px-36 py-10">
+            <div className="text-right bg-cust-orange px-10 md:px-36 py-10">
               <div className="transform transition-all duration-500 ease-in-ou group-hover:-translate-x-[100px]">
                 PROJECTS
               </div>
@@ -573,19 +560,21 @@ const Home = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-16">
             <div className="flex flex-col w-full justify-center items-center gap-10">
-              <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebAgroIndo bg-cover bg-no-repeat bg-center gap-5">
-                <div className="text-8xl font-black">AGROINDO WEBSITE</div>
-                <div className="text-xl font-semibold">
+              <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebAgroIndo bg-cover bg-no-repeat bg-center gap-5 px-10">
+                <div className="text-5xl md:text-8xl font-black text-center">
+                  AGROINDO WEBSITE
+                </div>
+                <div className="text-base md:text-xl font-semibold text-center">
                   Export and Import Spice Company
                 </div>
               </div>
-              <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-                <div className="flex flex-col w-1/2 justify-center items-start gap-5">
-                  <div className="text-5xl font-bold text-left leading-snug">
+              <div className="flex flex-col md:flex-row w-full justify-center items-start gap-10 md:gap-24 px-10 md:px-36">
+                <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start gap-5">
+                  <div className="text-2xl md:text-5xl font-bold text-center md:text-left leading-snug">
                     Multinational Spices Needs
                   </div>
-                  <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
-                  <div className="text-lg font-medium text-left">
+                  <hr className="bg-black opacity-50 w-full md:w-1/2 h-1 rounded-full" />
+                  <div className="text-base md:text-lg font-medium text-justify md:text-left">
                     AgroIndo is a company based in Malang which specialized in
                     exporting and importing spices across countries. My job here
                     is to create a website that fullfils the company need from
@@ -615,9 +604,9 @@ const Home = () => {
                     Coming Soon..!
                   </Button>
                 </div>
-                <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+                <div className="flex flex-col w-full md:w-1/2 justify-center items-center gap-10">
                   <img
-                    className="w-full h-[400px] object-cover object-center"
+                    className="w-full h-72 md:h-[400px] object-cover object-center rounded-2xl"
                     src={BusinessMeet}
                     alt="missing img"
                   />
@@ -625,21 +614,23 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-10">
-              <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebBEM bg-cover bg-no-repeat bg-center gap-5">
-                <div className="text-8xl font-black">BEM FILKOM WEBSITE</div>
-                <div className="text-xl font-semibold">
+              <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebBEM bg-cover bg-no-repeat bg-center gap-5 px-10">
+                <div className="text-5xl md:text-8xl font-black text-center">
+                  BEM FILKOM WEBSITE
+                </div>
+                <div className="text-base md:text-xl font-semibold text-center">
                   Executive Organization of FILKOM UB
                 </div>
               </div>
-              <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-                <div className="flex flex-col w-1/2 justify-center items-start gap-5">
-                  <div className="text-5xl font-bold text-left leading-snug">
+              <div className="flex flex-col md:flex-row w-full justify-center items-start gap-10 md:gap-24 px-10 md:px-36">
+                <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start gap-5">
+                  <div className="text-2xl md:text-5xl font-bold text-center md:text-left leading-snug">
                     A General Use Website
                     <br />
                     for BEM FILKOM
                   </div>
-                  <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
-                  <div className="text-lg font-medium text-left">
+                  <hr className="bg-black opacity-50 w-full md:w-1/2 h-1 rounded-full" />
+                  <div className="text-base md:text-lg font-medium text-justify md:text-left">
                     A one period use web and keep updated throughout the period
                     used from introduction, information, to administration needs
                     for BEM FILKOM. BEM FILKOM 2023's website is the pride and
@@ -667,29 +658,29 @@ const Home = () => {
                     Go To BEM FILKOM 2023's Website
                   </Button>
                 </div>
-                <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+                <div className="flex flex-col w-full md:w-1/2 justify-center items-center gap-10">
                   <img
-                    className="w-full h-[400px] object-cover object-left"
+                    className="w-full h-auto md:h-[400px] object-cover object-left rounded-2xl"
                     src={Tentang}
                     alt="missing img"
                   />
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-full justify-center items-center px-36 gap-10">
+            <div className="flex flex-col w-full justify-center items-center px-10 md:px-36 gap-10">
               <div className="text-center text-4xl font-bold text-white bg-cust-darker-blue py-3 px-8 border-2 border-cust-orange rounded-2xl">
                 Other Projects
               </div>
-              <div className="flex flex-row w-full justify-between items-center text-white gap-10 font-bold">
-                <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+              <div className="flex flex-col md:flex-row w-full justify-between items-center text-white gap-10 font-bold">
+                <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                   <img className="w-72" src={Abdimasa} alt="Missing Image" />
                   <div className="text-center text-xl">DESA PUNTEN WEBSITE</div>
                 </div>
-                <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+                <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                   <img className="w-72" src={PKKMB} alt="Missing Image" />
                   <div className="text-center text-xl">SIMABA FILKOM</div>
                 </div>
-                <div className="flex flex-col w-1/3 h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
+                <div className="flex flex-col w-full md:w-1/3 h-[450px] md:h-[500px] justify-center items-center bg-cust-darker-blue px-8 py-8 border-4 border-cust-orange rounded-2xl gap-5">
                   <img className="w-72" src={FitMeal} alt="Missing Image" />
                   <div className="text-center text-xl">FITMEAL</div>
                 </div>

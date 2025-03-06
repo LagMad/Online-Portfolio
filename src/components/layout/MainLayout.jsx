@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
     <>
       <ScrollToTop />
       <div
-        className="bg-white text-black font-Poppins"
+        className="bg-white text-black font-Poppins overflow-hidden"
         style={{ backgroundImage: `url(${background})` }}
       >
         <Navbar />
