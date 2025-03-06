@@ -140,6 +140,7 @@ const Home = () => {
                 className="w-full h-96 md:h-[500px] object-cover object-center rounded-lg"
                 src={Portrait}
                 alt="missing img"
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col w-full md:w-2/3 justify-center items-start text-justify gap-7">
@@ -318,6 +319,7 @@ const Home = () => {
               className="w-full md:w-1/3 h-[400px] object-cover object-center rounded-lg"
               src={SideView}
               alt="missing img"
+              loading="lazy"
             />
           </motion.div>
           <motion.div
@@ -338,6 +340,7 @@ const Home = () => {
               className="w-full md:w-1/3 h-[400px] object-cover object-bottom rounded-lg"
               src={FinalPitching}
               alt="missing img"
+              loading="lazy"
             />
             <div className="text-base md:text-lg w-full md:w-2/3 font-medium text-justify">
               Although my skill in Front-End web development has grown
@@ -391,6 +394,7 @@ const Home = () => {
               className="w-full md:w-1/3 h-[400px] object-cover object-center rounded-lg"
               src={BusinessMeet}
               alt="missing img"
+              loading="lazy"
             />
           </motion.div>
           <motion.div
@@ -468,6 +472,7 @@ const Home = () => {
                       className="w-full h-72 md:h-[400px] object-cover object-center rounded-2xl"
                       src={PITBEM}
                       alt="missing img"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -509,6 +514,7 @@ const Home = () => {
                       className="w-full h-64 md:h-[400px] object-cover object-center rounded-2xl"
                       src={CreativeDesign}
                       alt="missing img"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -609,6 +615,7 @@ const Home = () => {
                     className="w-full h-72 md:h-[400px] object-cover object-center rounded-2xl"
                     src={BusinessMeet}
                     alt="missing img"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -663,6 +670,7 @@ const Home = () => {
                     className="w-full h-auto md:h-[400px] object-cover object-left rounded-2xl"
                     src={Tentang}
                     alt="missing img"
+                    loading="lazy"
                   />
                 </div>
               </div>
