@@ -275,7 +275,7 @@ const Projects = () => {
                     Developer
                   </div>
                   <div className="">
-                    <span className="font-bold">Team Size :</span> 9
+                    <span className="font-bold">Team Size :</span> 4
                   </div>
                   <div className="">
                     <span className="font-bold">Period :</span> 2023

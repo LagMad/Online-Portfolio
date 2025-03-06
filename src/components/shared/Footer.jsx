@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <motion.footer
       initial={{ opacity: 0, y: 150 }}
-      buhileInView={{
+      whileInView={{
         opacity: 1,
         y: 0,
         transition: {
