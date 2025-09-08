@@ -44,7 +44,7 @@ const DidYouKnow = () => {
         className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 justify-center items-center"
       >
         <div className="flex flex-col justify-center items-center w-full md:w-2/3 gap-5">
-          <div className="text-5xl font-bold text-center">
+          <div className="text-3xl sm:text-5xl font-bold text-center">
             <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out text-black hover:text-white py-0">
               Curious
             </span>{" "}
@@ -95,7 +95,7 @@ const DidYouKnow = () => {
           loading="lazy"
         />
         <div className="flex flex-col justify-center items-center w-full md:w-2/3 gap-5">
-          <div className="text-5xl font-bold text-center">
+          <div className="text-3xl sm:text-5xl font-bold text-center">
             Thirsty of{" "}
             <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out text-black hover:text-white py-0">
               Knowledge
@@ -140,7 +140,7 @@ const DidYouKnow = () => {
         className="flex flex-col-reverse md:flex-row gap-5 md:gap-10 justify-center items-center"
       >
         <div className="flex flex-col justify-center items-center w-full md:w-2/3 gap-5">
-          <div className="text-5xl font-bold text-center">
+          <div className="text-3xl sm:text-5xl font-bold text-center">
             Pushing{" "}
             <span className="border-b-2 border-b-cust-orange bg-transparent hover:bg-cust-orange transition-all duration-500 ease-in-out text-black hover:text-white py-0">
               Forward

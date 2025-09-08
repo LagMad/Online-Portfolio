@@ -29,7 +29,7 @@ const Activities = () => {
         <div className="flex flex-col w-full justify-center items-center gap-16">
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-BEM bg-cover bg-no-repeat bg-center gap-5 px-10">
-              <div className="text-5xl md:text-8xl font-black text-center">
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black text-center">
                 BEM FILKOM UB 2023
               </div>
               <div className="text-base md:text-xl font-semibold text-center">
@@ -72,7 +72,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-bottom gap-5 px-10">
-              <div className="text-5xl md:text-8xl font-black text-center">
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black text-center">
                 TSA BRAWIJAYA
               </div>
               <div className="text-base md:text-xl font-semibold text-center">

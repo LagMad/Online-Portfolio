@@ -52,7 +52,7 @@ const Projects = () => {
         <div className="flex flex-col w-full justify-center items-center gap-10 pb-10">
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebAgroIndo bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">AGROINDO</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">AGROINDO</div>
               <div className="text-xl font-semibold">
                 Export and Import Spice Company
               </div>
@@ -93,7 +93,7 @@ const Projects = () => {
                   Coming Soon..!
                 </Button>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={BusinessMeet}
@@ -104,7 +104,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-WebBEM bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">BEM FILKOM WEBSITE</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">BEM FILKOM WEBSITE</div>
               <div className="text-xl font-semibold">
                 Executive Organization of FILKOM UB
               </div>
@@ -145,7 +145,7 @@ const Projects = () => {
                   Go To BEM FILKOM 2023's Website
                 </Button>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={PIT}
@@ -156,7 +156,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-SIMABA_SS bg-cover bg-no-repeat bg-top gap-5">
-              <div className="text-8xl font-black">SIMABA FILKOM</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">SIMABA FILKOM</div>
               <div className="text-xl font-semibold">FILKOM UB Orientation</div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -195,7 +195,7 @@ const Projects = () => {
                   Go To SIMABA FILKOM
                 </Button>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[350px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={SIMABA}
@@ -206,7 +206,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-DesaPunten_SS bg-cover bg-no-repeat bg-top gap-5">
-              <div className="text-8xl font-black">DESA WISATA PUNTEN</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">DESA WISATA PUNTEN</div>
               <div className="text-xl font-semibold">Tourism Guide Website</div>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -241,7 +241,7 @@ const Projects = () => {
                   Go To Desa Wisata Punten
                 </Button>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={Abdimasa}
@@ -252,7 +252,7 @@ const Projects = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-FITMEAL_SS bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">FITMEAL</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">FITMEAL</div>
               <div className="text-xl font-semibold">
                 Basic Computing Community (BCC) Internship 2024
               </div>
@@ -291,7 +291,7 @@ const Projects = () => {
                   Go To FITMEAL
                 </Button>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={FinalPitching}

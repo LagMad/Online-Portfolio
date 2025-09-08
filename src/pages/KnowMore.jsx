@@ -36,7 +36,7 @@ const KnowMore = () => {
           ref={containerRef}
         >
           <div
-            className="text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
+            className="text-3xl sm:text-5xl md:text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
             style={{
               WebkitTextStrokeWidth: "5px", // Outline width
               WebkitTextStrokeColor: "white", // Outline color
@@ -50,7 +50,7 @@ const KnowMore = () => {
         </div>
         <div className="flex flex-col w-full justify-center items-center gap-20 pb-16">
           <div className="flex flex-col w-full justify-center items-center gap-10">
-            <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden">
+            <div className="flex w-full flex-col text-3xl sm:text-5xl md:text-9xl font-black group text-white overflow-hidden">
               <div className="text-left bg-cust-darker-blue px-36 py-10">
                 <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                   MY GOALS
@@ -109,7 +109,7 @@ const KnowMore = () => {
           </div>
 
           <div className="flex flex-col w-full justify-center items-center gap-10">
-            <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden">
+            <div className="flex w-full flex-col text-3xl sm:text-5xl md:text-9xl font-black group text-white overflow-hidden">
               <div className="text-left bg-cust-darker-blue px-36 py-10">
                 <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                   DREAM COMPANY
@@ -160,7 +160,7 @@ const KnowMore = () => {
           </div>
 
           <div className="flex flex-col w-full justify-center items-center gap-10">
-            <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden">
+            <div className="flex w-full flex-col text-3xl sm:text-5xl md:text-9xl font-black group text-white overflow-hidden">
               <div className="text-left bg-cust-darker-blue px-36 py-10">
                 <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                   ULTIMATE GOAL
@@ -219,7 +219,7 @@ const KnowMore = () => {
           </div>
 
           <div className="flex flex-col w-full justify-center items-center gap-10">
-            <div className="flex w-full flex-col text-9xl font-black group text-white overflow-hidden justify-center items-center">
+            <div className="flex w-full flex-col text-3xl sm:text-5xl md:text-9xl font-black group text-white overflow-hidden justify-center items-center">
               <div className="w-full text-left bg-cust-darker-blue px-36 py-10">
                 <div className="transform transition-all duration-500 ease-in-out group-hover:translate-x-[100px]">
                   MY MISSION

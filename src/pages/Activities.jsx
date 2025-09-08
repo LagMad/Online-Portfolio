@@ -61,7 +61,7 @@ const Activities = () => {
         <div className="flex flex-col w-full justify-center items-center gap-10 pb-10">
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-TSA-UB bg-cover bg-no-repeat bg-bottom gap-5">
-              <div className="text-8xl font-black">TSA BRAWIJAYA</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">TSA BRAWIJAYA</div>
               <div className="text-xl font-semibold">
                 Tanoto Scholars Association of Brawijaya University
               </div>
@@ -106,7 +106,7 @@ const Activities = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={TsaExternal}
@@ -122,7 +122,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-FirstBusinessMeet bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">AGROINDO DEVTEAM</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">AGROINDO DEVTEAM</div>
               <div className="text-xl font-semibold">
                 Export and Import Spice Company
               </div>
@@ -150,7 +150,7 @@ const Activities = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={AgroIndoMeet}
@@ -161,7 +161,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-PIT-TO bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">BEM FILKOM NAWASENA</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">BEM FILKOM NAWASENA</div>
               <div className="text-xl font-semibold">
                 Executive Organization of FILKOM UB
               </div>
@@ -204,7 +204,7 @@ const Activities = () => {
                   information and knowledge through BEM FILKOM UB’s social media
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={PIT}
@@ -215,7 +215,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-PK2Cat bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">PKKMB & STARTUP ACADEMY</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">PKKMB & STARTUP ACADEMY</div>
               <div className="text-xl font-semibold">FILKOM UB Orientation</div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -252,7 +252,7 @@ const Activities = () => {
                   and scoring new student’s submission.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[350px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={SIMABA}
@@ -263,7 +263,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-AbdimasaDesa bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">FILKOM ABDIMASA</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">FILKOM ABDIMASA</div>
               <div className="text-xl font-semibold">Tourism Guide Website</div>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -291,7 +291,7 @@ const Activities = () => {
                   Front-end using wordpress website template.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={Abdimasa}
@@ -302,7 +302,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-FitMealTeam bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">BCC INTERNSHIP</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">BCC INTERNSHIP</div>
               <div className="text-xl font-semibold">
                 Basic Computing Community (BCC) Internship 2024
               </div>
@@ -332,7 +332,7 @@ const Activities = () => {
                   framework.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={FinalPitching}
@@ -343,7 +343,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-SchotivalOnStage bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">SCHOTIVAL</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">SCHOTIVAL</div>
               <div className="text-xl font-semibold">Scholarship Festival</div>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -382,7 +382,7 @@ const Activities = () => {
                   Scholarship.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={SchotivalExplaining}
@@ -398,7 +398,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-PMKDaniel bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">PMK DANIEL</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">PMK DANIEL</div>
               <div className="text-xl font-semibold">
                 Christian Organization of FILKOM UB
               </div>
@@ -431,7 +431,7 @@ const Activities = () => {
                   together, academically and non-academically.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[350px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={PMKGabungan}
@@ -442,7 +442,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-FGTSTogether bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">FILKOM GOES TO SCHOOL</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">FILKOM GOES TO SCHOOL</div>
               <div className="text-xl font-semibold">Visiting High Schools</div>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
@@ -471,7 +471,7 @@ const Activities = () => {
                   in Magelang, Central Java.
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-center rounded-2xl drop-shadow-2xl"
                   src={FGTSPresenting}
@@ -482,7 +482,7 @@ const Activities = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center w-full py-60 text-white bg-InauTeam bg-cover bg-no-repeat bg-center gap-5">
-              <div className="text-8xl font-black">INAUGURASI FILKOM</div>
+              <div className="text-3xl sm:text-5xl md:text-8xl font-black">INAUGURASI FILKOM</div>
               <div className="text-xl font-semibold">
                 By New Students, For New Students
               </div>
@@ -516,7 +516,7 @@ const Activities = () => {
                   <br />• Coordinating security team
                 </div>
               </div>
-              <div className="flex flex-col w-1/2 justify-center items-center gap-10">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-10">
                 <img
                   className="w-full h-[400px] object-cover object-top rounded-2xl drop-shadow-2xl"
                   src={InauSecurity}
