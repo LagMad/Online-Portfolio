@@ -37,7 +37,7 @@ const Projects = () => {
           ref={containerRef}
         >
           <div
-            className="text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
+            className="text-3xl sm:text-5xl md:text-9xl font-black border-[5px] border-white px-8 py-2 transition-all duration-500 ease-in-out"
             style={{
               WebkitTextStrokeWidth: "5px", // Outline width
               WebkitTextStrokeColor: "white", // Outline color
@@ -59,7 +59,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
               <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
-                <div className="text-5xl font-bold text-left leading-snug">
+                <div className="text-3xl sm:text-5xl font-bold text-center md:text-left leading-snug">
                   Multinational Spices Needs
                 </div>
                 <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
@@ -111,7 +111,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
               <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
-                <div className="text-5xl font-bold text-left leading-snug">
+                <div className="text-3xl sm:text-5xl font-bold text-center md:text-left leading-snug">
                   A General Use Website
                   <br />
                   for BEM FILKOM
@@ -161,7 +161,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
               <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
-                <div className="text-5xl font-bold text-left leading-snug">
+                <div className="text-3xl sm:text-5xl font-bold text-center md:text-left leading-snug">
                   Orientation Website
                   <br />
                   for New Student
@@ -211,7 +211,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
               <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
-                <div className="text-5xl font-bold text-left leading-snug">
+                <div className="text-3xl sm:text-5xl font-bold text-center md:text-left leading-snug">
                   Helping Tourists And Locals Alike
                 </div>
                 <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
@@ -259,7 +259,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
               <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
-                <div className="text-5xl font-bold text-left leading-snug">
+                <div className="text-3xl sm:text-5xl font-bold text-center md:text-left leading-snug">
                   Helping People To Have A Healthy Diet
                 </div>
                 <hr className="bg-black opacity-50 w-1/2 h-1 rounded-full" />
