@@ -48,7 +48,7 @@ const Activities = () => {
           <div
             className="text-3xl sm:text-5xl md:text-9xl font-black border-[5px] border-white px-4 py-1 sm:px-8 sm:py-2 transition-all duration-500 ease-in-out"
             style={{
-              WebkitTextStrokeWidth: "5px",
+              WebkitTextStrokeWidth: "2px", // Adjusted for responsiveness
               WebkitTextStrokeColor: "white",
               color: isHovered ? "white" : "transparent",
             }}
