@@ -5,10 +5,10 @@ import SVGs from "../components/shared/SVGs";
 const ConnectWithMe = () => {
   return (
     <MainLayout>
-      <div className="flex flex-row w-full">
-        <div className="flex flex-row w-1/2 min-h-screen bg-WithCat bg-cover bg-no-repeat bg-bottom" />
-        <div className="flex flex-col w-1/2 min-h-screen bg-cust-darker-blue pt-20 justify-center items-start pr-36 pl-10 text-white gap-10">
-          <div className="text-5xl font-black leading-tight">
+      <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex flex-col w-full lg:w-1/2 min-h-screen bg-WithCat bg-cover bg-no-repeat bg-bottom" />
+        <div className="flex flex-col w-full lg:w-1/2 min-h-screen bg-cust-darker-blue pt-10 lg:pt-20 justify-center items-start px-6 sm:px-10 md:px-20 lg:px-36 text-white gap-5 lg:gap-10">
+          <div className="text-3xl lg:text-5xl font-black leading-tight">
             Linking Hearts,
             <br />
             Sharing Paths.
@@ -24,11 +24,11 @@ const ConnectWithMe = () => {
               If you're inspired to explore this synergy further, I'm here to
               connect and collaborate with you on our shared journey.
             </div>
-            <div className="flex flex-row w-full justify-start items-center gap-5">
+            <div className="flex flex-col sm:flex-row w-full justify-start items-center gap-5">
               <SVGs.Email fillColor="white" width="35" height="35" />
               <div>hizkiajeremmy@gmail.com</div>
             </div>
-            <div className="flex flex-row w-full justify-start items-center gap-5">
+            <div className="flex flex-col sm:flex-row w-full justify-start items-center gap-5">
               <button
                 className="flex flex-col group justify-center items-center gap-2 bg-transparent hover:bg-cust-orange rounded-lg px-2 py-2 transform transition-all duration-500 ease-in-out"
                 onClick={() => {

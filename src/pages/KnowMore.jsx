@@ -63,15 +63,15 @@ const KnowMore = () => {
               </div>
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-10">
-              <div className="flex flex-row w-full justify-center items-center px-36 gap-10">
-                <div className="w-1/3">
+              <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36 gap-10">
+                <div className="w-full lg:w-1/3">
                   <img
                     className="object-cover object-center rounded-2xl"
                     src={Selfie}
                     alt="missing img"
                   />
                 </div>
-                <div className="flex flex-col w-2/3 text-black text-lg font-medium text-justify gap-5">
+                <div className="flex flex-col w-full lg:w-2/3 text-black text-lg font-medium text-justify gap-5">
                   <div>
                     As an Informatics Engineering student of Brawijaya
                     University, it is my responsibility to never stop learning
@@ -121,8 +121,8 @@ const KnowMore = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row w-full justify-center items-center px-36 gap-10">
-              <div className="flex flex-col w-2/3 text-black text-lg font-medium text-justify gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36 gap-10">
+              <div className="flex flex-col w-full lg:w-2/3 text-black text-lg font-medium text-justify gap-5">
                 <div>
                   Who doesn't know google? Oh wait, let me correct that for you.
                   Who doesn't USE google? Google has become some sort of primary
@@ -173,15 +173,15 @@ const KnowMore = () => {
               </div>
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-10">
-              <div className="flex flex-row w-full justify-center items-center px-36 gap-10">
-                <div className="w-1/3">
+              <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36 gap-10">
+                <div className="w-full lg:w-1/3">
                   <img
                     className="h-[400px] object-cover object-left rounded-2xl"
                     src={AtTSA}
                     alt="missing img"
                   />
                 </div>
-                <div className="flex flex-col w-2/3 text-black text-lg font-medium text-justify gap-5">
+                <div className="flex flex-col w-full lg:w-2/3 text-black text-lg font-medium text-justify gap-5">
                   <div>
                     Although having a dream company may seems like the peak of
                     my goal, to work there, it isn't the actual goal. As I said
@@ -235,15 +235,15 @@ const KnowMore = () => {
               </div>
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-5">
-              <div className="flex flex-row w-full justify-center items-center px-36">
-                <div className="w-1/3 p-5 bg-cust-darker-blue rounded-[36px]">
+              <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36">
+                <div className="w-full lg:w-1/3 p-5 bg-cust-darker-blue rounded-[36px]">
                   <img
                     className="h-[400px] w-full object-cover object-center rounded-2xl"
                     src={AloneInClass}
                     alt="missing img"
                   />
                 </div>
-                <div className="w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-r-2xl">
+                <div className="w-full lg:w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-r-2xl">
                   Getting a grip on time management is the key for keeping life
                   in check, especially for us teenagers juggling a ton of stuff.
                   It's not just about meeting deadlines, it's about making every
@@ -271,8 +271,8 @@ const KnowMore = () => {
                   when to rest?
                 </div> */}
               </div>
-              <div className="flex flex-row w-full justify-center items-center px-36">
-                <div className="flex flex-col w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-l-2xl">
+              <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36">
+                <div className="flex flex-col w-full lg:w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-l-2xl">
                   Secondly, understanding myself is crucial for navigating
                   life's twists and turns and staying true to my goals. It's
                   about figuring out what drives me, what I'm passionate about,
@@ -304,15 +304,15 @@ const KnowMore = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-row w-full justify-center items-center px-36">
-                <div className="w-1/3 p-5 bg-cust-darker-blue rounded-[36px]">
+              <div className="flex flex-col lg:flex-row w-full justify-center items-center px-6 sm:px-10 md:px-20 lg:px-36">
+                <div className="w-full lg:w-1/3 p-5 bg-cust-darker-blue rounded-[36px]">
                   <img
                     className="h-[400px] w-full object-cover object-bottom rounded-2xl"
                     src={Paralayang}
                     alt="missing img"
                   />
                 </div>
-                <div className="flex flex-col w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-r-2xl">
+                <div className="flex flex-col w-full lg:w-2/3 text-white text-lg font-medium text-justify gap-5 bg-cust-darker-blue px-10 py-7 rounded-r-2xl">
                   Thirdly, I believe in the power of experiences to enhance my
                   skills. They say experience is the greatest teacher, and I
                   couldn't agree more. Many of the skills I got have been

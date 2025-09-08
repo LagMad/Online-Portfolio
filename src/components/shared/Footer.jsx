@@ -41,7 +41,7 @@ const Footer = () => {
           <SocialButton name="LinkedIn" url="https://www.LinkedIn.com/in/hizkiajeremmy" Icon={SVGs.LinkedIn} />
         </div>
       </div>
-      <div className="w-full px-36">
+      <div className="w-full px-6 sm:px-10 md:px-20 lg:px-36">
         <hr className="border-black opacity-15 w-full border-2 rounded-lg my-8" />
       </div>
       <div className="flex flex-row w-full justify-center items-center">

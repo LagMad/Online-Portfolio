@@ -57,8 +57,8 @@ const Projects = () => {
                 Export and Import Spice Company
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Multinational Spices Needs
                 </div>
@@ -109,8 +109,8 @@ const Projects = () => {
                 Executive Organization of FILKOM UB
               </div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   A General Use Website
                   <br />
@@ -159,8 +159,8 @@ const Projects = () => {
               <div className="text-8xl font-black">SIMABA FILKOM</div>
               <div className="text-xl font-semibold">FILKOM UB Orientation</div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Orientation Website
                   <br />
@@ -209,8 +209,8 @@ const Projects = () => {
               <div className="text-8xl font-black">DESA WISATA PUNTEN</div>
               <div className="text-xl font-semibold">Tourism Guide Website</div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Helping Tourists And Locals Alike
                 </div>
@@ -257,8 +257,8 @@ const Projects = () => {
                 Basic Computing Community (BCC) Internship 2024
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Helping People To Have A Healthy Diet
                 </div>

@@ -11,7 +11,7 @@ const WhoAmICard = ({ name, title, description }) => {
 
   return (
     <div
-      className="flex flex-col group drop-shadow-none hover:drop-shadow-xl justify-center items-center h-72 w-[500px] py-5 px-10 gap-2 border-4 border-transparent hover:border-cust-orange rounded-xl bg-transparent hover:bg-cust-darker-blue transform transition-all duration-500 ease-in-out"
+      className="flex flex-col group drop-shadow-none hover:drop-shadow-xl justify-center items-center h-72 w-full max-w-md py-5 px-5 sm:px-10 gap-2 border-4 border-transparent hover:border-cust-orange rounded-xl bg-transparent hover:bg-cust-darker-blue transform transition-all duration-500 ease-in-out"
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
     >

@@ -66,8 +66,8 @@ const Activities = () => {
                 Tanoto Scholars Association of Brawijaya University
               </div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   A Community for TELADAN Scholarship Awardee
                 </div>
@@ -127,8 +127,8 @@ const Activities = () => {
                 Export and Import Spice Company
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Multinational Spices Needs
                 </div>
@@ -166,8 +166,8 @@ const Activities = () => {
                 Executive Organization of FILKOM UB
               </div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   A General Use Website
                   <br />
@@ -218,8 +218,8 @@ const Activities = () => {
               <div className="text-8xl font-black">PKKMB & STARTUP ACADEMY</div>
               <div className="text-xl font-semibold">FILKOM UB Orientation</div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Orientation Website
                   <br />
@@ -266,8 +266,8 @@ const Activities = () => {
               <div className="text-8xl font-black">FILKOM ABDIMASA</div>
               <div className="text-xl font-semibold">Tourism Guide Website</div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Helping Tourists And Locals Alike
                 </div>
@@ -307,8 +307,8 @@ const Activities = () => {
                 Basic Computing Community (BCC) Internship 2024
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Helping People To Have A Healthy Diet
                 </div>
@@ -346,8 +346,8 @@ const Activities = () => {
               <div className="text-8xl font-black">SCHOTIVAL</div>
               <div className="text-xl font-semibold">Scholarship Festival</div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Scholarship Showroom for College Students
                 </div>
@@ -403,8 +403,8 @@ const Activities = () => {
                 Christian Organization of FILKOM UB
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   A Place For Christian Students To Grow
                 </div>
@@ -445,8 +445,8 @@ const Activities = () => {
               <div className="text-8xl font-black">FILKOM GOES TO SCHOOL</div>
               <div className="text-xl font-semibold">Visiting High Schools</div>
             </div>
-            <div className="flex flex-row w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Helping High School Students About College
                 </div>
@@ -487,8 +487,8 @@ const Activities = () => {
                 By New Students, For New Students
               </div>
             </div>
-            <div className="flex flex-row-reverse w-full justify-center items-start gap-24 px-36">
-              <div className="flex flex-col w-1/2 justify-center items-start gap-5">
+            <div className="flex flex-col lg:flex-row-reverse w-full justify-center items-start gap-10 lg:gap-24 px-6 sm:px-10 md:px-20 lg:px-36">
+              <div className="flex flex-col w-full lg:w-1/2 justify-center items-start gap-5">
                 <div className="text-5xl font-bold text-left leading-snug">
                   Newbies To Fully Become Family Of FILKOM UB
                 </div>

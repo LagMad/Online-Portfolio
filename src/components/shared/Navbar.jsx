@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-[9999] w-full h-16 flex justify-between items-center px-10 md:px-36 font-Poppins font-semibold drop-shadow-2xl ${
+      className={`fixed top-0 z-[9999] w-full h-16 flex justify-between items-center px-6 sm:px-10 md:px-20 lg:px-36 font-Poppins font-semibold drop-shadow-2xl ${
         isScrolled ? "bg-cust-darker-blue" : "bg-transparent"
       } transition-all duration-500 ease-in-out`}
     >
@@ -104,35 +104,35 @@ const Navbar = () => {
           {isOpen && (
             <ul className="absolute flex flex-col z-[9999] gap-1 right-0 top-16 min-w-[200px] text-center text-white justify-center items-center bg-transparent bg-opacity-40 backdrop-blur-md p-2">
               <li
-                className="w-full px-8 py-2 bg-black bg-opacity-40 hover:bg-gray-700 backdrop-blur-md"
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700 backdrop-blur-md"
                 onClick={() => navigate("/")}
                 style={{ cursor: "pointer" }}
               >
                 Home
               </li>
               <li
-                className="w-full px-8 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
                 onClick={() => navigate("/activities")}
                 style={{ cursor: "pointer" }}
               >
                 Activities
               </li>
               <li
-                className="w-full px-8 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
                 onClick={() => navigate("/projects")}
                 style={{ cursor: "pointer" }}
               >
                 Projects
               </li>
               <li
-                className="w-full px-8 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
                 onClick={() => navigate("/know-more")}
                 style={{ cursor: "pointer" }}
               >
                 Know More
               </li>
               <li
-                className="w-full px-8 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
                 onClick={() => navigate("/connect-with-me")}
                 style={{ cursor: "pointer" }}
               >
