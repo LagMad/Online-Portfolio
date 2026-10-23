@@ -9,6 +9,8 @@ import Activities from "../pages/Activities";
 import Projects from "../pages/Projects";
 import KnowMore from "../pages/KnowMore";
 import ConnectWithMe from "../pages/ConnectWithMe";
+import Blog from "../pages/Blog";
+import BlogPost from "../pages/BlogPost";
 
 const Router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const Router = createBrowserRouter([
   {
     path: "/Projects",
     element: <Projects />,
+  },
+  {
+    path: "/Blog",
+    element: <Blog />,
+  },
+  {
+    path: "/Blog/:slug",
+    element: <BlogPost />,
   },
   {
     path: "/Know-More",

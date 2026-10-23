@@ -82,6 +82,14 @@ const Navbar = () => {
         <Button
           type={"button"}
           variation={"tertiary-white"}
+          path={"/blog"}
+          onClick={() => navigate("/blog")}
+        >
+          Blog
+        </Button>
+        <Button
+          type={"button"}
+          variation={"tertiary-white"}
           path={"/know-more"}
           onClick={() => navigate("/know-more")}
         >
@@ -123,6 +131,13 @@ const Navbar = () => {
                 style={{ cursor: "pointer" }}
               >
                 Projects
+              </li>
+              <li
+                className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
+                onClick={() => navigate("/blog")}
+                style={{ cursor: "pointer" }}
+              >
+                Blog
               </li>
               <li
                 className="w-full px-4 py-2 bg-black bg-opacity-40 hover:bg-gray-700"
